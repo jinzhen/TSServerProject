@@ -24,20 +24,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <netinet/in.h>
-
-typedef enum {
-    PACKET_HEART_BEAT = '0',
-    PACKET_USER_INFO,
-    PACKET_OTHER_DATA
-}PACKET_TYPE;
-
-
-typedef struct {
-    PACKET_TYPE type;
-    size_t length;
-    char *data;
-}PacketStruct;
-
+#include "common_ob.h"
 
 
 #define TS_PORT 8000
